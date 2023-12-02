@@ -1,0 +1,91 @@
+.info-content {
+  margin-top: 100px;
+  color: black;
+  border-radius: 10px;
+  padding: 3em 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 6em;
+  justify-content: space-between;
+}
+.left-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.left-container h3 {
+  font-size: var(--h3);
+  font-weight: 700;
+}
+.left-container h5 {
+  font-size: var(--h5);
+  font-weight: 400;
+}
+.right-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  gap: 5em;
+}
+.right-container p {
+  flex-grow: 2;
+  width: 30%;
+  font-size: var(--p);
+  line-height: 2.25;
+}
+.right-container p::before {
+  font-size: var(--h3);
+  font-weight: 800;
+  position: absolute;
+  transform: translate(-1em);
+  color: gray;
+  line-height: 1;
+}
+.right-container p:nth-child(1)::before {
+  content: "1";
+}
+.right-container p:nth-child(2)::before {
+  content: "2";
+}
+.right-container p:nth-child(3)::before {
+  content: "3";
+}
+.right-container p:nth-child(4)::before {
+  content: "4";
+}
+@media screen and (max-width: 1024px) {
+  .left-container h3 {
+    font-size: var(--h3-resp-2);
+  }
+  .left-container h5 {
+    font-size: var(--h5-resp-2);
+  }
+  .right-container p {
+    font-size: var(--p-resp-2);
+  }
+  .right-container p::before {
+    font-size: var(--h3-resp-2);
+  }
+}
+@media screen and (max-width: 430px) {
+  .info-content {
+    flex-direction: column;
+    padding: 1.5em 2.5em;
+    gap: 3em;
+  }
+  .left-container {
+    width: 100%;
+    text-align: center;
+  }
+  .right-container {
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    gap: 2em;
+  }
+  .right-container p {
+    width: 100%;
+  }
+}

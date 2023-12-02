@@ -1,0 +1,67 @@
+.fa-container {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-header {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.fa-header h2 {
+  font-size: var(--h2);
+  text-align: center;
+  font-weight: 700;
+}
+.fa-header h5 {
+  text-align: center;
+  font-size: var(--h5);
+  font-weight: 400;
+}
+.fa-button-group {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.fa-button-group .btn {
+  width: 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2em 1em;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .fa-header h2 {
+    font-size: var(--h1-resp-3);
+  }
+  .fa-header h5 {
+    font-size: var(--h5-resp-2);
+  }
+  .fa-button-group button {
+    font-size: var(--p-resp-2);
+    padding: 1em 1em !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  .fa-button-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+  }
+  .fa-button-group button {
+    width: 100% !important;
+    padding: 1.5em 1.5em !important;
+  }
+}

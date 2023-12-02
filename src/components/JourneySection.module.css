@@ -1,0 +1,47 @@
+.journey-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.journey-container h2 {
+  font-size: var(--h2);
+  letter-spacing: 0;
+  font-weight: 700;
+}
+.journey-container span {
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  color: transparent;
+}
+.journey-container h5 {
+  font-size: var(--h5);
+  font-weight: 400;
+}
+.journey-container .btn {
+  padding: 0.5em 2em;
+  background-color: var(--primary);
+  color: var(--bg);
+  border-radius: 6px;
+  transition: transform ease 0.2s, box-shadow ease 0.2s;
+  display: inline-block;
+  font-size: var(--p);
+  white-space: nowrap;
+}
+@media screen and (max-width: 1024px) {
+  .journey-container h2 {
+    font-size: var(--h1-resp-3);
+  }
+  .journey-container h5 {
+    font-size: var(--h5-resp-2);
+  }
+  .journey-container .btn {
+    font-size: var(--p-resp-2);
+  }
+}
+@media screen and (max-width: 430px) {
+  .journey-container {
+    text-align: center;
+  }
+}

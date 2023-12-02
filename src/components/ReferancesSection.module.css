@@ -1,0 +1,99 @@
+.referances-container {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+}
+.ref-header {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  line-height: 1.5;
+}
+.ref-header h2 {
+  font-size: var(--h2);
+  text-align: center;
+  font-weight: 700;
+}
+.ref-header h5 {
+  font-size: var(--h5);
+  text-align: center;
+  font-weight: 400;
+}
+.card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 3em;
+  gap: 20px;
+  border-radius: 10px;
+}
+.review-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+.review-img {
+  height: 80px;
+  width: 80px;
+  border-radius: 100px;
+}
+.review-name {
+  font-size: var(--p);
+}
+.review-box svg {
+  align-self: flex-start;
+}
+.comment {
+  font-size: var(--p);
+}
+@media screen and (max-width: 1024px) {
+  .ref-header h2 {
+    font-size: var(--h1-resp-3);
+  }
+  .ref-header h5 {
+    font-size: var(--h5-resp-2);
+  }
+  .card {
+    padding: 2em;
+  }
+  .review-img {
+    height: 60px;
+    width: 60px;
+  }
+  .review-name p {
+    font-size: var(--p-resp-2);
+    margin: 0;
+  }
+  .review-name span {
+    font-size: 12px;
+  }
+  .comment {
+    font-size: var(--p-resp-2);
+  }
+}
+@media screen and (max-width: 430px) {
+  .card-section {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .card {
+    width: 100%;
+  }
+}

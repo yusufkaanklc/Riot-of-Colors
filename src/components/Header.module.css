@@ -1,0 +1,38 @@
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+}
+.navbar-brand-css {
+  letter-spacing: 0.5px;
+}
+.link-css {
+  opacity: 0.9;
+  transition: linear 0.2s;
+}
+.link.css:hover {
+  opacity: 0.5;
+  transition: linear 0.2s;
+}
+.navbar-toggler-css:focus,
+.navbar-toggler-css:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.menu-icon-line {
+  background-color: black;
+  width: 15px;
+  height: 2px;
+  margin: 4px 0;
+  position: relative;
+}
+@media screen and (max-width: 1024px) {
+  .navbar-brand-css {
+    font-size: 13px !important;
+  }
+  .link-css {
+    font-size: 13px !important;
+  }
+}

@@ -1,0 +1,143 @@
+.intro-container {
+  margin-top: 6rem;
+  display: flex;
+  padding: 0;
+}
+.text-stack {
+  height: 100%;
+  width: 50%;
+}
+.new-template-text {
+  margin-bottom: 50px;
+  font-size: 11px;
+  padding: 0.3rem 0.5rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+.header-text {
+  font-size: var(--h1);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.1;
+  font-weight: 700;
+  color: black;
+}
+.italic-text {
+  -webkit-text-stroke-width: 1px;
+  font-style: italic;
+  color: transparent;
+}
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  color: transparent;
+}
+.sub-text p {
+  margin-bottom: 10px 0;
+}
+.button-group button {
+  padding: 1em 2em !important;
+  transition: linear 0.2s;
+  transform: translateY(0px);
+}
+.button-group button:first-child {
+  margin-right: 10px;
+}
+.button-group button:last-child {
+  margin-left: 10px;
+}
+.button-group button:active,
+.button-group button:focus,
+.button-group button:not(:active) {
+  border: none;
+}
+.button-group button:hover {
+  transition: linear 0.2s;
+  transform: translateY(-5px);
+}
+.scroll-box {
+  display: flex;
+  align-items: center;
+}
+.scroll-box i {
+  font-size: 25px;
+  position: relative;
+  top: 3px;
+}
+.scroll-box p {
+  font-size: 12px;
+  margin: 0;
+  margin-left: 15px;
+}
+.grid-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid-container svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+  .text-stack {
+    width: 60%;
+  }
+  .header-text {
+    font-size: var(--h1-resp-1);
+  }
+  .grid-container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .new-template-text {
+    font-size: 10px;
+  }
+  .header-text {
+    font-size: var(--h1-resp-2);
+  }
+  .sub-text {
+    font-size: var(--p-resp-2);
+  }
+  .button-group button {
+    font-size: var(--p-resp-2);
+  }
+  .scroll-box p {
+    font-size: 10px;
+  }
+  .grid-container {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .intro-container {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap-reverse;
+  }
+  .text-stack {
+    width: 100%;
+  }
+  .new-template-text {
+    margin-bottom: 1.5rem;
+  }
+  .header-text {
+    font-size: var(--h1-resp-3);
+    margin: 0;
+  }
+  .button-group button {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px !important;
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .grid-container svg {
+    width: 100%;
+    height: 100%;
+  }
+}
